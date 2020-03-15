@@ -15,6 +15,7 @@ syntax keyword litaCOthers      func var
 syntax keyword litaCStructure   struct union
 syntax keyword litaCTypedefs    typedef
 syntax keyword litaCImports     import include foreign
+syntax keyword litaCStorage     const public
 
 syntax keyword litaCTypes       i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 bool
 
@@ -76,3 +77,4 @@ highlight default link litaCTypedefs Typedef
 highlight default link litaCOthers Keyword
 highlight default link litaCStructure Structure
 highlight default link litaCTypes Type
+highlight default link litaCStorage StorageClass
