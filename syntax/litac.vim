@@ -74,5 +74,5 @@ highlight default link litaCLabel Label
 highlight default link litaCStatement Statement
 highlight default link litaCTypedefs Typedef
 highlight default link litaCOthers Keyword
-highlight default link litaCSructure Structure
+highlight default link litaCStructure Structure
 highlight default link litaCTypes Type
