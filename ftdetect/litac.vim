@@ -1,2 +1,2 @@
 " ftdetect/litac.vim
-autocmd BufNewFile,BufRead *.litac setfiletype litac
+autocmd BufNewFile,BufRead *.lita setfiletype litac
