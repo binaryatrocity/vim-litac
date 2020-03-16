@@ -12,7 +12,7 @@ syntax keyword litaCLabel       case default
 syntax keyword litaCConditional if else switch
 syntax keyword litaCRepeat      while for do
 syntax keyword litaCOthers      func var
-syntax keyword litaCStructure   struct union
+syntax keyword litaCStructure   struct union enum
 syntax keyword litaCTypedefs    typedef
 syntax keyword litaCImports     import include foreign
 syntax keyword litaCStorage     const public
