@@ -10,12 +10,8 @@ endif
 " Don't load another plugin for this buffer
 let b:did_ftplugin = 1
 
-" setlocal commentstring& define& include&
-" 
-" if exists('&ofu')
-"     setlocal ofu=ccomplete#Complete
-" endif
-
+" Fold based on syntax definitions
+setlocal foldmethod=syntax
 
 " treat @ as part of a word
 setlocal iskeyword+=@-@

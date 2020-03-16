@@ -54,15 +54,23 @@ syntax cluster litaCCommentGroup contains=litaCTodo
 " String and Character constants
 " Highlight special characters (those which have a backslash) differently
 syntax match litaCSpecial display contained "\\\(x\x\+\|\o\{1,3}\|.\|$\)"
+
 " Highlight % items in strings
 syntax match litaCFormat  display "%\(\d\+\$\)\=[-+' #0*]*\(\d*\|\*\|\*\d\+\$\)\(\.\(\d*\|\*\|\*\d\+\$\)\)\=\([hlLjzt]\|ll\|hh\)\=\([aAbdiuoxXDOUfFeEgGcCsSpn]\|\[\^\=.[^]]*\]\)" contained
 
 " Curly brace blocks
 syntax region litaCBlock start="{" end="}" transparent fold
 
+" Comments
+syntax region litaCLineComment start="//" skip="\\$" end="$" keepend
+syntax region litaCBlockComment matchgroup=litaCBlockCommentStart start="/\*" end="\*/" contains=@litaCCommentGroup,litaCString,litaCNumber fold extend
+
 
 " Set highights
 highlight default link litaCTodo Todo
+highlight default link litaCLineComment Comment
+highlight default link litaCBlockComment Comment
+highlight default link litaCBlockCommentStart Comment
 
 highlight default link litaCString String
 highlight default link litaCNumber Number
