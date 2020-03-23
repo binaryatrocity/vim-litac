@@ -11,7 +11,7 @@ endif
 let b:did_ftplugin = 1
 
 " Fold based on syntax definitions
-setlocal foldmethod=syntax
+setlocal foldmethod=indent
 
 " treat @ as part of a word
 setlocal iskeyword+=@-@
